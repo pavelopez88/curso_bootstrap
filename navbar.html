@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    </style>
+</head>
+<body style="min-height: 2000px;">
+    <!--? Con la propiedad fixed-top se puede dejar estatico el nav para que se muestre siempre aunque se haga scroll hacia abajo -->
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">Pagina</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--? menus de navegacion -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dd-menu">Categorias</a>
+                    <ul class="dropdown-menu" aria-labelledby="dd-menu">
+                        <li><a href="#" class="dropdown-item">Elemento 1</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento 2</a></li>
+                        <li><a href="#" class="dropdown-item">Elemento 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+            <form action="" class="d-flex">
+                <input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-light" type="button">Buscar</button>
+            </form>
+        </div>
+
+    </div>
+    </nav>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
